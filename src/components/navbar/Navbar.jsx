@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/boy.png'
+import logo from '../../assets/stemlogo.png'
 import { Link } from "react-router-dom";
 
 const Menu = () => (
@@ -31,6 +31,11 @@ const Navbar = () => {
           <Link to="/"><p>Invoices</p></Link>
           <Link to="/"><p>Employees</p></Link>
           <Link to="/"><p>Funds</p></Link>
+
+          <div className="navbar-links_container">
+            <input type="text" placeholder='Search Item Here' autoFocus={true} />
+
+          </div>
           <Link to="/create">
             <button type='button' className='primary-btn' >Create</button>
           </Link>
@@ -54,13 +59,13 @@ const Navbar = () => {
                 <Link to="/"><p>Invoices</p></Link>
                 <Link to="/"><p>Employees</p></Link>
                 <Link to="/"><p>Funds</p></Link>
-
                 <Link to="/create">
+
+                  <div className="navbar-links_container">
+                    <input type="text" placeholder='Search Item Here' autoFocus={true} />
+
+                  </div>
                   <button type='button' className='primary-btn' >Create</button>
-                </Link>
-                <Link to="/">
-                  {console.log("Wakili ")}
-                  <button type='button' className='secondary-btn' onClick={""}>Disconnect</button>
                 </Link>
                 <button type='button' className='primary-btn' onClick={""}>Connect</button>
               </>
@@ -68,6 +73,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
+
 
     </div>
   )

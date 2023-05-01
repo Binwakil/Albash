@@ -2,25 +2,25 @@
 export const services = [
 	{
 		id: "1",
-		name: "Check bid",
-		category: "Place bid on auction token, ",
+		name: "Employee",
+		category: "An employee can provide a payment invoice to an employer, ",
 	},
 	{
 		id: "2",
-		name: "Place Offer",
+		name: "Employer",
 		category:
-			"The token is sold to the highest bidder at the end of the auction period",
-	},
+			"- An employer can deposit on-chain assets for payment of invoices after a stipulated period of time. An employer can cancel payment of an invoice before a critical period of t An employer can not cancel payment of an invoice after a critical period of time",
+		},
 	{
 		id: "3",
-		name: "Time",
-		category: "Auctions close 15 minutes after the first bid is received",
+		name: "System",
+		category: "Verify that an Employer recieved the said amount correctly",
 	},
 	{
 		id: "4",
-		name: "Transparent Bid",
+		name: "Privacy",
 		category:
-			"All bids are transparent and visible to all users of the platform.",
+			"All the transaction are secret and private",
 	},
 ];
 

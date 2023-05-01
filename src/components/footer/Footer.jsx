@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-links_logo">
         <div>
           <img src={nftlogo} alt="logo" />
-          <p>StemTas</p>
+          <p>Albashi</p>
         </div>
         <div>
           <h3>Get the lastes Updates</h3>
@@ -22,10 +22,10 @@ const Footer = () => {
         </div>
         </div>
         <div className="footer-links_div">
-          <h4>StemTas</h4>
+          <h4>Albashi</h4>
           <p>Explore</p>
           <p>How it Works</p>
-          <p>Counters</p>
+          <p>Products</p>
           <p>Contact Us</p>
         </div>
         <div className="footer-links_div">
@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
       <div className="footer-copyright">
         <div>
-        <p> © {(new Date().getFullYear())} StemTas, Co. All Rights Reserved</p>
+        <p> © {(new Date().getFullYear())} Albashi, Co. All Rights Reserved</p>
         </div>
         <div>
           <AiOutlineInstagram size={25} color='white' className='footer-icon' />
