@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/stemlogo.png'
+import logo from '../../assets/boy.png'
 import { Link } from "react-router-dom";
-import { isLogging, logout, login } from "./../../near/utils";
 
 const Menu = () => (
   <>
-    <Link to="/"><p>Explore</p> </Link>
 
   </>
 )
@@ -16,12 +14,6 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   const [user, setUser] = useState(true)
 
-  const handleLogout = () => {
-    logout()
-  }
-  const handleLogin = () => {
-    login()
-  }
 
   return (
     <div className='navbar'>
@@ -29,37 +21,24 @@ const Navbar = () => {
         <div className="navbar-links_logo">
           <img src={logo} alt="logo" />
           <Link to="/">
-            <h1>StemTas</h1>
+            <h1>Albashi</h1>
           </Link>
-        </div>
-        <div className="navbar-links_container">
-          <input type="text" placeholder='Search Item Here' autoFocus={true} />
-          <Menu />
-          {/* {"Wakili" && <Link to="/"><p onClick={handleLogout}>Logout</p></Link> }
-         */}
         </div>
       </div>
       <div className="navbar-sign">
-        {isLogging() ? (
-          <>
-            {"Wakili" && <Link to="/myArchiNfts/Wakili"><p>My StemNFTS</p></Link>}
-            {"Wakili" && <Link to="myListing/wakili"><p>My Auctions</p></Link>}
-            <Link to="/create">
-              <button type='button' className='primary-btn' >Create</button>
-            </Link>
-            <Link to="/">
-              {console.log("Wakili ", isLogging)}
-              <button type='button' className='secondary-btn' onClick={handleLogout}>Disconnect</button>
-            </Link>
-          </>
-        ) : (
-          <>
-            <button type='button' className='primary-btn' onClick={handleLogin}>Connect</button>
-          </>
-        )}
+        <>
+          <Link to="/"><p>History</p> </Link>
+          <Link to="/"><p>Invoices</p></Link>
+          <Link to="/"><p>Employees</p></Link>
+          <Link to="/"><p>Funds</p></Link>
+          <Link to="/create">
+            <button type='button' className='primary-btn' >Create</button>
+          </Link>
+          <button type='button' className='primary-btn' onClick={""}>Connect</button>
+        </>
       </div>
 
-      
+
       <div className="navbar-menu">
         {toggleMenu ?
           <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
@@ -70,28 +49,26 @@ const Navbar = () => {
               <Menu />
             </div>
             <div className="navbar-menu_container-links-sign">
-              {isLogging() ? (
-                <>
-                  {"Wakili" && <Link to="/myArchiNfts/Wakili"><p>ArchiNFTs</p></Link>}
-                  {"Wakili" && <Link to="myListing/wakili"><p>Listing</p></Link>}
-                  <Link to="/create">
-                    <button type='button' className='primary-btn' >Create</button>
-                  </Link>
-                  <Link to="/">
-                    {console.log("Wakili ", isLogging)}
-                    <button type='button' className='secondary-btn' onClick={handleLogout}>Disconnect</button>
-                  </Link>
-                </>
-              ) : (
-                <>
-                  <button type='button' className='primary-btn' onClick={handleLogin}>Connect</button>
-                </>
-              )}
+              <>
+                <Link to="/"><p>History</p> </Link>
+                <Link to="/"><p>Invoices</p></Link>
+                <Link to="/"><p>Employees</p></Link>
+                <Link to="/"><p>Funds</p></Link>
 
+                <Link to="/create">
+                  <button type='button' className='primary-btn' >Create</button>
+                </Link>
+                <Link to="/">
+                  {console.log("Wakili ")}
+                  <button type='button' className='secondary-btn' onClick={""}>Disconnect</button>
+                </Link>
+                <button type='button' className='primary-btn' onClick={""}>Connect</button>
+              </>
             </div>
           </div>
         )}
       </div>
+
     </div>
   )
 }

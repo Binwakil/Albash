@@ -68,81 +68,81 @@ const Header = () => {
     <div className='header section__padding'>
       <div className="header-content">
         <div>
-          <h1>Discover, collect, and exchange tokens for high-quality STEM educational resources</h1>
+          <h1>Pay your Workers in Crypto....... Recieve Salary in Crypto with Albashiiiiii!!!...</h1>
           <img className='shake-vertical' src={coin} alt="" />
         </div>
       </div>
-      {/* <div className="header-slider">
-        <h1>Top Architecs</h1>
+      <div className="header-slider">
+        <h1>TOP EMPLOYERS</h1>
        <Slider {...settings} className='slider'>
             <div className='slider-card'>
               <p className='slider-card-number'>1</p>
               <div className="slider-img">
-                <img src={seller1} alt="" />
+                <img src={""} alt="" />
                 <img src={verify} className='verify' alt="" />
               </div>
               <Link to={`/profile/Rian`}>
-              <p className='slider-card-name'>James Bond</p>
+              <p className='slider-card-name'>Near Protocol</p>
               </Link>
-              <p className='slider-card-price'>5.250 <span>ETH</span></p>
+              <p className='slider-card-price'>256 <span>Employees</span></p>
             </div>
             <div className='slider-card'>
               <p className='slider-card-number'>2</p>
               <div className="slider-img">
-                <img src={seller2} alt="" />
+                <img src={"seller2"} alt="" />
                 <img src={verify} className='verify' alt="" />
               </div>
               <Link to={`/profile/Rian`}>
-              <p className='slider-card-name'>Rian Leon</p>
+              <p className='slider-card-name'>Secrete Network</p>
               </Link>
-              <p className='slider-card-price'>4.932 <span>ETH</span></p>
+              <p className='slider-card-price'>451 <span>Employees</span></p>
             </div>
             <div className='slider-card'>
               <p className='slider-card-number'>3</p>
               <div className="slider-img">
-                <img src={seller3} alt="" />
+                <img src={"seller3"} alt="" />
                 <img src={verify} className='verify' alt="" />
               </div>
               <Link to={`/profile/Rian`}>
-              <p className='slider-card-name'>Lady Young</p>
+              <p className='slider-card-name'>Atafom University</p>
               </Link>
-              <p className='slider-card-price'>4.620 <span>ETH</span></p>
+              <p className='slider-card-price'>5141 <span>Employees</span></p>
             </div>
             <div className='slider-card'>
               <p className='slider-card-number'>4</p>
               <div className="slider-img">
-                <img src={seller4} alt="" />
+                <img src={"seller4"} alt="" />
                 <img src={verify} className='verify' alt="" />
               </div>
               <Link to={`/profile/Rian`}>
-              <p className='slider-card-name'>Black Glass</p>
+              <p className='slider-card-name'>Bayero University</p>
               </Link>
-              <p className='slider-card-price'>4.125 <span>ETH</span></p>
+              <p className='slider-card-price'>125 <span>Employees</span></p>
             </div>
             <div className='slider-card'>
               <p className='slider-card-number'>5</p>
               <div className="slider-img">
-                <img src={seller5} alt="" />
+                <img src={"seller5"} alt="" />
                 <img src={verify} className='verify' alt="" />
               </div>
               <Link to={`/profile/Rian`}>
-              <p className='slider-card-name'>Budhiman</p>
+              <p className='slider-card-name'>ConiaSoft Cloud</p>
               </Link>
-              <p className='slider-card-price'>3.921 <span>ETH</span></p>
+              <p className='slider-card-price'>3921 <span>Employees</span></p>
             </div>
             <div className='slider-card'>
               <p className='slider-card-number'>6</p>
               <div className="slider-img">
-                <img src={seller6} alt="" />
+                <img src={"seller6"} alt="" />
                 <img src={verify} className='verify' alt="" />
               </div>
               <Link to={`/profile/Rian`}>
-              <p className='slider-card-name'>Alex</p>
+              <p className='slider-card-name'>PTH Technologies</p>
               </Link>
-              <p className='slider-card-price'>3.548 <span>ETH</span></p>
+              <p className='slider-card-price'>548 <span>Employees</span></p>
             </div>
         </Slider>
-      </div> */}
+      </div>
     </div>
   )
 }

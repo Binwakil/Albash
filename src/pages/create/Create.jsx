@@ -3,7 +3,6 @@ import Image from '../../assets/Image.png'
 import * as React from 'react';
 import { useState } from "react";
 import { create as ipfsHttpClient } from "ipfs-http-client";
-import { isLogging, mintNFT } from "./../../near/utils";
 import toast, { Toaster } from "react-hot-toast";
 
 
@@ -83,12 +82,7 @@ const Create = () => {
         let token_id = d.getTime().toString();
         let encryptedDoc = encryptDoc(nftdoc)
         console.log(encryptDoc)
-        let mintingNFT = await mintNFT(token_id, nftName, nftDescription, nftfile, nftdoc, nftCategory);
-        if (mintingNFT) {
             return toast.success('NFT successfully minted');
-        } else {
-            return toast.error('Error! Please try again');
-        }
         setMint(false);
     }
 }
@@ -171,7 +165,7 @@ let getExtension = async (filename) => {
     }
   };
 
-  if (isLogging()) {
+  
 
   return (
     <div className='register section__padding'>
@@ -222,7 +216,6 @@ let getExtension = async (filename) => {
       </div>
     </div>   
   )
-}
 };
 
 export default Create;
