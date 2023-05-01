@@ -2,14 +2,9 @@ import "./App.css";
 import { Navbar, Footer } from "./components";
 import {
 	Home,
-	MyArchiNfts,
-	MyListing,
-	Item,
 	Create,
 	Login,
 	Register,
-	Nftitem,
-	Biditem,
 } from "./pages";
 import { Routes, Route } from "react-router-dom";
 import * as React from "react";
