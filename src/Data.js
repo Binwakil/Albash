@@ -9,7 +9,7 @@ export const services = [
 		id: "2",
 		name: "Employer",
 		category:
-			"- An employer can deposit on-chain assets for payment of invoices after a stipulated period of time. An employer can cancel payment of an invoice before a critical period of t An employer can not cancel payment of an invoice after a critical period of time",
+			"- An employer can cancel payment of an invoice before a critical period of t An employer can not cancel payment of an invoice after a critical period of time",
 		},
 	{
 		id: "3",

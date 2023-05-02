@@ -66,12 +66,6 @@ const Header = () => {
   };
   return (
     <div className='header section__padding'>
-      <div className="header-content">
-        <div>
-          <h1>Pay your Workers in Crypto....... Recieve Salary in Crypto with Albashiiiiii!!!...</h1>
-          <img className='shake-vertical' src={coin} alt="" />
-        </div>
-      </div>
       <div className="header-slider">
         <h1>TOP EMPLOYERS</h1>
        <Slider {...settings} className='slider'>
@@ -144,6 +138,7 @@ const Header = () => {
         </Slider>
       </div>
     </div>
+      
   )
 }
 
