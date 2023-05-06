@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import verify from '../../assets/verify.png'
-import coin from '../../assets/boy.png'
 import { Link  } from 'react-router-dom';
 const Header = () => {
   var settings = {

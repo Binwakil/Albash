@@ -1,5 +1,4 @@
 import React from 'react'
-import './footer.css'
 import nftlogo from '../../assets/stemlogo.png'
 import { AiOutlineInstagram,AiOutlineTwitter, } from "react-icons/ai";
 import { RiDiscordFill } from "react-icons/ri";
@@ -9,10 +8,6 @@ const Footer = () => {
 
 <footer class="bg-black">
   <div class="mx-auto grid text-gray-50 lg:grid-cols-12">
-    <div class="flex flex-col items-start border-r border-b border-slate-500 py-8 px-5 sm:flex-row sm:px-8 md:pt-14 lg:col-span-7 xl:pl-32 2xl:pl-40">
-      <img class="w-40" src="/images/VlG3Gf3I1xy18sBfhC_5I.png" alt="" />
-      <p class="pt-4 text-sm leading-6 tracking-wide sm:pl-10 sm:pt-0">Pay and Recieve Salaries Easily </p>
-    </div>
     <div class="px-5 py-8 sm:px-8 md:pt-14 lg:col-span-5 xl:pr-32 2xl:pr-40">
       <p class="font-medium text-purple-900">Inquire</p>
       <p class="mb-4 mt-4 text-2xl sm:mb-8 sm:text-5xl">Request a Info</p>

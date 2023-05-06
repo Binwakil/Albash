@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header, Service, Hero, HeaderStats} from '../../components'
+import {Header, Service, Hero, Services} from '../../components'
 
 
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
   return <div>
    <Hero />
    <Header />
+   <Services />
    {/* <Bids title="Hot Bids"  /> */}
    <Service />
   </div>;

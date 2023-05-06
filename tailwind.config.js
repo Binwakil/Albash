@@ -1,3 +1,5 @@
+const { color } = require('framer-motion');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,7 +14,7 @@ module.exports = {
       },
       colors: {
         text_primary: "#696D70",
-        primary: "#004181",
+        primary: "#7B1FA2",
         // primarylight: "#004181",
        secondary: "#2B1A82",
       //  secondarylight: "#004181",
