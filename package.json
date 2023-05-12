@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "crypto-js": "^4.1.1",
     "dotenv": "^16.0.3",
+    "secretjs": "^1.5.1",
     "framer-motion": "^10.9.3",
     "html2canvas": "^1.4.1",
     "ipfs-http-client": "^59.0.0",
@@ -27,6 +28,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "connect": "node src/secret/connect.js",
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
     "test": "react-scripts test",

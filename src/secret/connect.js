@@ -1,5 +1,4 @@
 const { SecretNetworkClient } = require("secretjs");
-
 require("dotenv").config();
 
 (async () => {
