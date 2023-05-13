@@ -1,6 +1,15 @@
 import React, { useState } from 'react'
+import { isLogging, logout, login } from "./../../secret/util";
 
 const Navbar = () => {
+  const [user, setUser] = useState(true)
+
+  const handleLogout = () => {
+    logout()
+  }
+  const handleLogin = () => {
+    login()
+  }
 
   return (
     <div className='navbar bg-black text-white'>
@@ -28,7 +37,8 @@ const Navbar = () => {
       <hr class="mt-4 w-full lg:hidden" />
       <div class="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
         <a href="#" title="" class="whitespace-nowrap rounded font-medium transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-purple-700 focus:ring-offset-2 hover:text-opacity-50"> Log in </a>
-        <a href="#" title="" class="whitespace-nowrap rounded-xl bg-purple-950 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-offset-2 hover:bg-purple-600">Connect Wallet</a>
+        <button type='button' onClick={handleLogin}  class="whitespace-nowrap rounded-xl bg-purple-950 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-offset-2 hover:bg-purple-600">Connect Wallet</button>
+      
       </div>
     </nav>
   </header>
