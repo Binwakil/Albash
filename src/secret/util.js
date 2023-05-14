@@ -1,12 +1,11 @@
 //We epxport all the functions from the ArchiNFT Smart Contract that we will use in the frontend 
-import { GRPCWEB_URL, LCD_URL, RPC_URL, CHAIN_ID, CHAIN_NAME, contractAddress } from "./config";
+import { GRPCWEB_URL, LCD_URL, RPC_URL, CHAIN_ID, CHAIN_NAME, contractAddress, DENOM, MINIMAL_DENOM } from "./config";
+
 import React, { useState, useEffect } from "react";
 
 const { SecretNetworkClient } = require("secretjs");
 
-const [myAddress, setMyAddress] = useState("");
-const [secretjs, setSecretjs] = useState();
-const [keplrReady, setKeplrReady] = useState(false);
+
 
 
 
@@ -33,6 +32,7 @@ export function logout() {
 
 
 const getKeplr = async () => {
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
   while (
     !window.keplr &&
@@ -105,9 +105,6 @@ const getKeplr = async () => {
     encryptionUtils: window.getEnigmaUtils(CHAIN_ID),
   });
 
-  setKeplrReady(true);
-  setMyAddress(myAddress);
-  setSecretjs(secretjs);
 
     
   }
